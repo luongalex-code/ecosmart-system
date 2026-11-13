@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "ESP-IDF: Build firmware (no flash)",
+            "type": "process",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile", "-ExecutionPolicy", "Bypass",
+                "-File", "${workspaceFolder}/firmware/esp-idf.ps1",
+                "-Action", "Build"
+            ],
+            "group": "build",
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}

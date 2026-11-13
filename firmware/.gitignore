@@ -1,0 +1,6 @@
+/build/
+/build-hardware-check/
+.env
+/sdkconfig
+/sdkconfig.old
+/*.log

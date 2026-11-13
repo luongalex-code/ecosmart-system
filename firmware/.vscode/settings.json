@@ -1,0 +1,10 @@
+{
+    "idf.customExtraVars": {
+        "IDF_PATH": "C:\\esp\\v5.5.5\\esp-idf",
+        "IDF_TOOLS_PATH": "C:\\Espressif",
+        "IDF_PYTHON_ENV_PATH": "C:\\Espressif\\python_env\\idf5.5_py3.11_env",
+        "ESP_ROM_ELF_DIR": "C:\\Espressif\\tools\\esp-rom-elfs\\20241011"
+    },
+    "idf.buildPath": "${workspaceFolder}/build",
+    "idf.currentSetup": "C:\\esp\\v5.5.5\\esp-idf"
+}

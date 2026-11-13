@@ -1,0 +1,72 @@
+menu "Smart Waste Sorting"
+config SW_SIMULATION
+    bool "Simulation only (no peripheral GPIO configured)"
+    default y
+config SW_WIRING_REVIEWED
+    bool "Wiring and 3.3V levels reviewed locally"
+    default n
+    depends on !SW_SIMULATION
+config SW_MOTION_CALIBRATED
+    bool "Actuators calibrated locally (driver API only; no remote motion)"
+    default n
+    depends on SW_WIRING_REVIEWED
+config SW_DEVICE_ID
+    string "Device ID (letters, digits, underscore, hyphen)"
+    default "esp32-01"
+config SW_WIFI_SSID
+    string "Wi-Fi SSID"
+    default ""
+config SW_WIFI_PASSWORD
+    string "Wi-Fi password (local sdkconfig only)"
+    default ""
+config SW_MQTT_URI
+    string "EMQX URI (mqtts://host:8883 recommended)"
+    default ""
+config SW_ALLOW_PLAINTEXT_MQTT
+    bool "Allow plaintext MQTT on an isolated development network"
+    default n
+config SW_MQTT_USERNAME
+    string "MQTT username"
+    default ""
+config SW_MQTT_PASSWORD
+    string "MQTT password"
+    default ""
+config SW_HX711_OFFSET
+    int "HX711 tare offset (raw counts)"
+    default 0
+config SW_HX711_COUNTS_PER_KG
+    int "HX711 counts per kg; 0 means uncalibrated"
+    default 0
+config SW_IR_ACTIVE_LEVEL
+    int "IR active level (verify sensor output)"
+    range 0 1
+    default 0
+config SW_LIMIT_ACTIVE_LEVEL
+    int "Limit switch active level (external bias required)"
+    range 0 1
+    default 0
+config SW_UART_BAUD
+    int "Android TTL UART baud rate (must match Box adapter)"
+    range 1200 921600
+    default 115200
+config SW_LCD_CONFIRMED
+    bool "LCD is HD44780 + PCF8574 and its wiring is confirmed"
+    default n
+    depends on SW_WIRING_REVIEWED
+config SW_LCD_SDA
+    int "Confirmed LCD SDA GPIO; -1 disables LCD"
+    range -1 33
+    default -1
+config SW_LCD_SCL
+    int "Confirmed LCD SCL GPIO; -1 disables LCD"
+    range -1 33
+    default -1
+config SW_LCD_ADDRESS
+    hex "Confirmed PCF8574 address"
+    range 0x08 0x77
+    default 0x27
+config SW_LCD_COLUMNS
+    int "LCD columns"
+    range 16 20
+    default 16
+endmenu

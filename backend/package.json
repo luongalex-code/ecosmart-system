@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/iot-unit.test.js",
+    "test:emqx": "node --test tests/iot-emqx.test.js",
+    "simulate:device": "node tools/device-simulator.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "chokidar": "^6.0.0",
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "mqtt": "^5.16.1",
+    "socket.io": "^4.8.4"
+  }
+}

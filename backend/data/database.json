@@ -1,0 +1,96 @@
+{
+  "station_name": "Trạm XL rác số 1",
+  "waste_stats": {
+    "organic_kg": 1140,
+    "organic_percent": 70,
+    "recycle_kg": 907,
+    "recycle_percent": 31,
+    "other_kg": 383,
+    "other_percent": 20,
+    "total_kg": 2430,
+    "growth_percent": 13
+  },
+  "environment": {
+    "temperature": 31.7,
+    "humidity": 56,
+    "temp_status": "Bình thường",
+    "humidity_status": "Bình thường"
+  },
+  "ai_accuracy": {
+    "success_rate": 92,
+    "correct_percent": 92.5,
+    "error_percent": 4.3
+  },
+  "waste_trend_7days": [
+    {
+      "day": "T2",
+      "kg": 1719
+    },
+    {
+      "day": "T3",
+      "kg": 2104
+    },
+    {
+      "day": "T4",
+      "kg": 1687
+    },
+    {
+      "day": "T5",
+      "kg": 2200
+    },
+    {
+      "day": "T6",
+      "kg": 2237
+    },
+    {
+      "day": "T7",
+      "kg": 2422
+    },
+    {
+      "day": "CN",
+      "kg": 2430
+    }
+  ],
+  "waste_logs": [
+    {
+      "id": "LOG-1792642570248-0",
+      "time": "11:16:10",
+      "ai_type": "Không xác định",
+      "confidence": 99.2,
+      "weight": 3.2,
+      "image_url": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=100&auto=format&fit=crop&q=60"
+    },
+    {
+      "id": "LOG-1792642570248-1",
+      "time": "11:15:55",
+      "ai_type": "Rác Khác",
+      "confidence": 92.6,
+      "weight": 3.4,
+      "image_url": "https://images.unsplash.com/photo-1530587191325-3db32d826c18?w=100&auto=format&fit=crop&q=60"
+    },
+    {
+      "id": "LOG-1792642570248-2",
+      "time": "11:15:40",
+      "ai_type": "Không xác định",
+      "confidence": 94.9,
+      "weight": 4.4,
+      "image_url": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=100&auto=format&fit=crop&q=60"
+    },
+    {
+      "id": "LOG-1792642570248-3",
+      "time": "11:15:25",
+      "ai_type": "Rác Khác",
+      "confidence": 85.3,
+      "weight": 0.7,
+      "image_url": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=100&auto=format&fit=crop&q=60"
+    },
+    {
+      "id": "LOG-1792642570248-4",
+      "time": "11:15:10",
+      "ai_type": "Hữu Cơ",
+      "confidence": 87.5,
+      "weight": 2.1,
+      "image_url": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=100&auto=format&fit=crop&q=60"
+    }
+  ]
+}
